@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Montserrat;
+} 
+
+.text-title{
+  @apply text-[20px] font-bold text-center ;
+}

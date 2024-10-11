@@ -9,24 +9,160 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
      
     <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 
     <title>ANDRES</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
 
     </nav>
 
-    <main>
+    <main class="flex justify-center items-center flex-col py-5 px-6 
+    md:px-0 
+    ">
 
-        <section class="container">
+        <!-- fundator section -->
+         <section class="bg-primary rounded-3xl flex flex-col items-center  text-center w-full p-4 pb-14 mt-24 
+         md:rounded-none ">
+            <!-- showed on sm devices -->
+            <img src="/assets/png/andres_circle.png" alt="andres" class="w-9/12 mx-auto -mt-24 md:hidden max-w-xs"/>
+            <h2 class="my-4 px-5 md:text-2xl md:my-12">TU GUÍA A UN FUTURO SEGURO <strong>CON ANDARA</strong></h2>
+            <!-- showed on bigger devices -->
+            <div class="flex flex-col items-center md:justify-center md:flex-row md:flex-wrap gap-5 max-w-screen-lg ">
+                <img src="/assets/png/andres_rectangle.png" alt="andres" class="hidden md:block md:max-w-[340px] "/>
+                <hr class=" w-11/12 border border-secondary md:hidden">
+                <div class="md:w-1/2 md:flex md:flex-col md:text-left ">
+                    <p class="text-sm mx-4 my-5 md:text-base ">Soy <strong>Andrés Aramburo</strong>, mi misión es ayudarte a proteger tu futuro y el de tus seres queridos.</p>
+                    <div class="md:flex md:gap-3">
+                        <div class="flex  flex-col md:flex-row md:w-1/2 md:items-center md:gap-2  ">
+                            <img src="/assets/svg/check_tag.svg" alt="check_tag" class="h-8 md:h-10"/>
+                            <p class="text-sm mt-2 mb-4 md:text-xs md:my-0">Certificado por la Comisión Nacional de Seguros y Fianzas.</p>
+                        </div>
+                        <div class="flex  flex-col md:flex-row md:w-1/2 md:items-center md:gap-2 ">
+                            <img src="/assets/svg/id_icon.svg" alt="check_tag" class="h-8 hidden md:block"/>
+                            <div>
+                                <p class="mt-2 text-sm">Cédula #C343501</p>
+                                <a href="#" class="text-xs underline">Consulta aquí</a>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- FAQ section -->
+                    <div class="hidden md:grid w-full place-items-center mt-5">
+                        <button class="bg-secondary rounded-md py-1 px-3 text-white w-auto font-semibold text-sm">AGENDA UNA ASESORÍA</button>
+                    </div>
+                </div>
+             </div>
+         </section>
+         <button class="block md:hidden my-5 bg-secondary rounded-md py-1 px-2 text-white w-auto font-semibold text-xs mt-12">AGENDA UNA ASESORÍA</button>
 
-            
+        <!-- FAQ section -->
+        <section class=" flex flex-wrap w-full gap-4 justify-center my-6 md:px-0 ">
+            <h2 class="text-title md:my-8 w-full">PREGUNTAS FRECUENTES</h2>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Por qué necesito un seguro de vida si ya tengo ahorros?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Es necesario contar con un seguro de gastos médicos mayores si estoy saludable?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Qué pasa si no puedo seguir aportando a mi plan de ahorro o inversión?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Nuestros planes son flexibles y adaptables a tus circunstancias. Si en algún momento no puedes continuar con las aportaciones, ajustamos el plan para que sigas protegido sin comprometer tus metas financieras.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Puedo obtener beneficios fiscales con estos planes?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Es posible combinar diferentes tipos de seguros y estrategias de inversión?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Qué sucede si quiero retirar mi inversión antes de tiempo?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Qué sucede si ya tengo un seguro de vida o gastos médicos?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
+            <details class="group p-4 gap-4 bg-primary rounded-2xl shadow-md h-full basis-full md:basis-5/12 hover:scale-105 hover:shadow-lg transition-all duration-150 ">
+                <summary class="flex items-start cursor-pointer">
+                    <img src="/assets/svg/plus_icon.svg" alt="plus_icon" class="w-6 h-6 mr-4 transition-transform group-open:rotate-45 duration-200"/>
+                    <h3 class="flex-1 text-base font-normal text-left">¿Qué tipos de imprevistos pueden cubrir los seguros de gastos médicos mayores?</h3>
+                </summary>
+                <div class="w-full flex ">
+                    <p class="ml-10 mt-4 text-xs text-left font-extralight transition-all duration-300 scale-50 opacity-0 group-open:opacity-100 group-open:scale-100">
+                        Aquí iría el texto de la respuesta o la explicación correspondiente cuando el usuario expanda la pregunta.
+                    </p>
+                </div>
+            </details>
+
         </section>
-
 
     </main>
     
@@ -39,7 +175,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {});
+        document.querySelectorAll('details').forEach((detail) => {
+            detail.addEventListener('toggle', (event) => {
+                if (detail.open) {
+                    document.querySelectorAll('details').forEach((otherDetail) => {
+                        if (otherDetail !== detail) {
+                            otherDetail.open = false;
+                        }
+                    });
+                }
+            });
+        });
     </script>
 
 
